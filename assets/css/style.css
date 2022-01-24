@@ -8,7 +8,7 @@ VARIABLES
 }
 
 body.dark {
-    --mainBgColor: #353353;
+    --mainBgColor: #3f3b75;
     --mainTextColor: #fff;
     --primaryColor: #eeca2b;
     --copyNavigationColor: #9c9ab3;
@@ -16,7 +16,41 @@ body.dark {
     --aboutBoxBGColor: #302f4e;
     --progressBarBGColor: #f1f1f1;
     --mainNAVBgColor: #2d2a58;
+    --progressBarOne: rgb(189, 209, 10);
+    --progressBarTwo: rgb(209, 10, 193);
+    --progressBarFour: rgb(128, 6, 98);
+    --progressBarFive: rgb(104, 247, 209);
+    --progressBarSix: rgb(226, 250, 10);
+    --serviceBoxOne: #6C6CE5;
+    --serviceShadowOne: rgb(108 108 229 / 50%);
+    --serviceBoxTwo: rgb(249, 215, 76);
+    --serviceShadowTwo: rgb(249 215 76 / 50%);
+    --serviceBoxThree: rgb(249, 123, 139);
+    --serviceShadowThree: rgb(249 123 139 / 50%);
 
+
+}
+
+body.light {
+    --mainBgColor: rgb(133, 193, 241);
+    --mainTextColor: rgb(57, 57, 59);
+    --primaryColor: rgb(8, 114, 130);
+    --copyNavigationColor: rgb(6, 84, 140);
+    --secondaryColor: rgb(11, 162, 186);
+    --aboutBoxBGColor: rgb(184, 216, 245);
+    --progressBarBGColor: #f1f1f1;
+    --mainNAVBgColor: rgb(184, 205, 240);
+    --progressBarOne: rgb(7, 79, 123);
+    --progressBarTwo: rgb(45, 228, 231);
+    --progressBarFour: rgb(47, 44, 44);
+    --progressBarFive: rgb(236, 159, 220);
+    --progressBarSix: rgb(81, 238, 175);
+    --serviceBoxOne: rgb(50, 159, 189);
+    --serviceShadowOne: rgba(6, 91, 115, 0.408);
+    --serviceBoxTwo: rgb(245, 221, 125);
+    --serviceShadowTwo: rgba(186, 150, 8, 0.557);
+    --serviceBoxThree: rgb(236, 159, 220);
+    --serviceShadowThree: rgba(240, 35, 199, 0.646);
 }
 
 
@@ -141,7 +175,14 @@ h2.global {
     /* line-height: 1.2; */
 
 
+}
 
+h2 img.filter {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    z-index: -3;
 }
 
 h2.global::before {
@@ -153,6 +194,7 @@ h2.global::before {
     width: 37px;
     height: 37px;
     background-image: url('../img/dots-bg-light.svg');
+
 
 }
 
@@ -581,6 +623,7 @@ NAWIGACJA
     width: 25%;
     padding: 0 15px;
     text-align: center;
+
 }
 
 .about .about-top .about-text {
@@ -615,6 +658,7 @@ NAWIGACJA
 .about .about-top .about-text .about-text-bg .description {
     width: 50%;
     padding: 0 15px;
+    text-align: justify;
 }
 
 .about .about-top .about-text .about-text-bg .skills {
@@ -708,7 +752,7 @@ NAWIGACJA
 }
 
 /********************************** 
-HOMEWORK*************************
+About me bottom*************************
 *************************** */
 .about-me {
     display: flex;
@@ -834,7 +878,7 @@ HOMEWORK*************************
 
     .row-latest .blog {
         width: 100%;
-        margin: 15px 200px;
+        margin: 15px 100px;
 
 
     }
@@ -922,13 +966,21 @@ HOMEWORK*************************
     width: calc(100%/3*2);
 }
 
+
+
 .row-form .contact-info {
-    background: url(../img/map-light.png);
+
+    /* background: url(../img/map-light.png); */
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 200px;
     padding: 0 15px;
     width: calc(100%/3);
+}
+
+body.light .row-form .contact-info img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+    position: absolute;
 }
 
 .row-form .contact-info h3 {

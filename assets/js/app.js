@@ -1,5 +1,5 @@
 let typedElement = new Typed('.typed', {
-    strings: ['Front-end developer', 'Clinical dietitian'],
+    strings: ['Junior Front-end developer', 'Clinical dietitian'],
     loop: true,
     typeSpeed: 50,
     backSpeed: 50

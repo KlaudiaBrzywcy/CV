@@ -35,8 +35,8 @@
 <body class="dark">
     <!-- Navigation -->
     <nav class="navigation">
-        <div class="logo"><a href="#"><img src="assets/img/logo-dark.svg" alt="" class="light"><img
-                    src="assets/img/logo.svg" alt="" class="dark"></a></div>
+        <div class="logo"><a href="#"><img src="assets/img/logo-dark.svg" alt="logo-dark" class="light"><img
+                    src="assets/img/logo.svg" alt="logo-light" class="dark"></a></div>
         <ul class="menu">
             <li><a href="#"><i class="fa-solid fa-house"></i>Home </a></li>
             <li><a href="#about"><i class="fa-solid fa-user"></i>About </a></li>
@@ -59,11 +59,11 @@
     <main>
         <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
 
-        <a href="" class="switcher"><i class="fa-solid fa-sun"></i>
+        <a href="#" class="switcher"><i class="fa-solid fa-sun"></i>
             <i class="fa-solid fa-moon"></i>
         </a>
 
-        <section class="home"><img class="avatar" src="assets/img/avatar-1.svg" alt="">
+        <section class="home"><img class="avatar" src="assets/img/Kaludia.jpg" alt="my photos">
             <h1>Klaudia Brzywcy-Nosowicz</h1>
             <h2>I'm <span class="typed"></span> </h2>
             <ul class="social-links">
@@ -130,7 +130,7 @@
                 </svg>
 
                 <svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg">
-                    <g fill="#44D7B6" fill-rule="evenodd">
+                    <g fill="#54D7B6" fill-rule="evenodd">
                         <path
                             d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z" />
                         <path
@@ -148,44 +148,67 @@
         </section>
         <section id="about" class="about">
             <div class="container">
-                <h2 class="global">About me</h2>
+                <h2 class="global">About me
+                    <img src="assets/img/dots-bg-light.svg" class="filter" alt="dots">
+                </h2>
                 <div class="about-top">
-                    <div class="about-photo"><img src="assets/img/avatar-1.svg" alt=""></div>
+                    <div class="about-photo"><img src="assets/img/avatar-1.svg" alt="my-photo">
+                    </div>
                     <div class="about-text" data-aos="fade-right">
                         <div class="about-text-bg">
                             <div class="description">
-                                <p>I am Bolby Doe,
-                                    web developer from London,
-                                    United Kingdom. I have rich experience in web site design and building
-                                    and customization,
-                                    also I am good at WordPress.</p><a href="#" class="btn">Download CV</a>
+                                <p>My name is Klaudia and I am Junior Front-end developer candidate from Gdańsk. I'm
+                                    looking foraward to start new career path in IT. Currently I take part in a Full
+                                    Stack Developer bootcamp but I feel especially interestend in Front-end
+                                    technologies. I am still very new to the industry but I am eager to learn and
+                                    prepared for lots of hard work. </p><a href="#" class="btn">Download CV</a>
                             </div>
                             <div class="skills">
                                 <div class="progress">
                                     <div class="info"><span>HTML</span><span>85%</span></div>
-                                    <div class="bar"><span style="width: 85%; background: rgb(189, 209, 10);"></span>
+                                    <div class="bar"><span
+                                            style="width: 85%; background: var(--progressBarOne);"></span>
                                     </div>
                                 </div>
                                 <div class="progress">
-                                    <div class="info"><span>CSS</span><span>70%</span></div>
-                                    <div class="bar"><span style="width: 70%; background: rgb(209, 10, 193);"></span>
+                                    <div class="info"><span>CSS/SASS</span><span>70%</span></div>
+                                    <div class="bar"><span
+                                            style="width: 70%; background: var(--progressBarTwo);"></span>
                                     </div>
                                 </div>
                                 <div class="progress">
-                                    <div class="info"><span>JS</span><span>5%</span></div>
-                                    <div class="bar"><span style="width: 5%; background: rgb(10, 186, 209);"></span>
+                                    <div class="info"><span>JS</span><span>10%</span></div>
+                                    <div class="bar"><span style="width: 10%; background: rgb(10, 186, 209);"></span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="info"><span>Python</span><span>25%</span></div>
+                                    <div class="bar"><span
+                                            style="width: 25%; background: var(--progressBarFour);"></span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="info"><span>SQL</span><span>50%</span></div>
+                                    <div class="bar"><span
+                                            style="width: 50%; background: var(--progressBarFive);"></span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="info"><span>GIT</span><span>50%</span></div>
+                                    <div class="bar"><span
+                                            style="width: 50%; background: var(--progressBarSix);"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--***************** HOMEWORK************************ -->
+                <!--***************** Row with cups of coffee************************ -->
                 <div class="about-me">
                     <div class="about-me-caption">
                         <div class="about-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
                         <div class="about-text">
-                            <p class="about-text-nr">5</p>
+                            <p class="about-text-nr">3</p>
                             <p class="about-text-subject">Projects completed</p>
                         </div>
                     </div>
@@ -199,39 +222,41 @@
                     <div class="about-me-caption">
                         <div class="about-icon"><i class="fa-solid fa-award"></i></div>
                         <div class="about-text">
-                            <p class="about-text-nr">0</p>
-                            <p class="about-text-subject">Award winner</p>
+                            <p class="about-text-nr">1</p>
+                            <p class="about-text-subject">Lovely doggo owner</p>
                         </div>
                     </div>
                     <div class="about-me-caption">
                         <div class="about-icon"><i class="fa-solid fa-user-group"></i></div>
                         <div class="about-text">
-                            <p class="about-text-nr">10</p>
-                            <p class="about-text-subject">Satisfied clients</p>
+                            <p class="about-text-nr">0</p>
+                            <p class="about-text-subject">Unsatisfied clients</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Services -->
                 <section id="services" class="services">
-                    <h2 class="global">Services</h2>
+                    <h2 class="global">Services
+                        <img src="assets/img/dots-bg-light.svg" class="filter" alt="dots">
+                    </h2>
                     <div class="row">
                         <div class="service-box"
-                            style="background-color:#6C6CE5; box-shadow: 0px 5px 20px 0px rgb(108 108 229 / 50%);">
+                            style="background-color: var(--serviceBoxOne); box-shadow: 0px 5px 20px 0px var(--serviceShadowOne);">
                             <img src="assets/img/service-1.svg" alt="paint">
                             <h3>UI/UX design</h3>
                             <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula
                                 eget. </p>
                         </div>
                         <div class="service-box"
-                            style="background-color: rgb(249, 215, 76); box-shadow: 0px 5px 20px 0px rgb(249 215 76 / 50%);">
+                            style="background-color: var(--serviceBoxTwo); box-shadow: 0px 5px 20px 0px var(--serviceShadowTwo);">
                             <img src="assets/img/service-2.svg" alt="web">
                             <h3>Web Development</h3>
                             <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula
                                 eget. </p>
                         </div>
                         <div class="service-box"
-                            style="background-color: rgb(249, 123, 139); box-shadow: 0px 5px 20px 0px rgb(249 123 139 / 50%);">
+                            style="background-color: var(--serviceBoxThree); box-shadow: 0px 5px 20px 0px var(--serviceShadowThree);">
                             <img src="assets/img/service-3.svg" alt="camera">
                             <h3>Photography</h3>
                             <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula
@@ -240,7 +265,9 @@
                     </div>
                 </section>
                 <section id="blog" class="latest-posts">
-                    <h2 class="global">Latest posts</h2>
+                    <h2 class="global">Latest posts
+                        <img src="assets/img/dots-bg-light.svg" class="filter" alt="dots">
+                    </h2>
                     <div class="row-latest">
                         <div class="blog">
                             <div class="picture"><img src="assets/img/laptop.svg" alt="laptop"><span
@@ -269,14 +296,18 @@
                 <!-- Formularz -->
 
                 <section id="contact" class="form-whole">
-                    <h2 class="global">Get In Touch</h2>
+                    <h2 class="global">Get In Touch
+                        <img src="assets/img/dots-bg-light.svg" class="filter" alt="dots">
+                    </h2>
                     <div class="row-form">
                         <div class="contact-info">
                             <h3>Let's talk about everything!</h3>
                             <p>Don't like forms? Send me an
-                                <a href="mailto:name@example.com">email</a>
+                                <a href="mailto:kbrzywcy@gmail.com">email</a>
                                 ". 👋"
                             </p>
+                            <img src="assets/img/map-light.png" class="filter" alt="mapka">
+
                         </div>
 
                         <div class="formularz">
@@ -309,10 +340,6 @@
                                         placeholder="Message" required></textarea>
 
                                 </div>
-
-
-
-
 
 
                                 <button type="submit">Send message</button>
