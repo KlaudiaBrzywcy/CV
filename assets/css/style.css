@@ -626,6 +626,12 @@ NAWIGACJA
 
 }
 
+.about .about-top .about-photo .kaludia {
+    border-radius: 50%;
+    width: 50%;
+
+}
+
 .about .about-top .about-text {
     width: 75%;
     padding: 0 15px;
@@ -966,8 +972,6 @@ About me bottom*************************
     width: calc(100%/3*2);
 }
 
-
-
 .row-form .contact-info {
 
     /* background: url(../img/map-light.png); */
@@ -981,6 +985,51 @@ About me bottom*************************
 body.light .row-form .contact-info img {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
     position: absolute;
+}
+
+/******************************************
+*************@mediaqueries*****************
+*******************************************/
+@media (max-width:1030px) {
+    body.light .row-form .contact-info img {
+        display: none;
+    }
+
+    body.dark .row-form .contact-info img {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .row-form .formularz {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-whole .row-form .formularz form .row {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+
+
+    }
+
+    .form-whole .row-form .formularz form .row .form-control0 {
+        width: 100%;
+        margin-right: 0px;
+
+
+    }
+
+    .form-whole .row-form .formularz form .row .form-control1 {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
 }
 
 .row-form .contact-info h3 {
@@ -999,6 +1048,7 @@ body.light .row-form .contact-info img {
     margin-bottom: 30px;
     padding: 0 15px;
     width: 100%;
+    column-gap: 15px;
 
 
 }
@@ -1006,7 +1056,7 @@ body.light .row-form .contact-info img {
 .form-whole .row-form .formularz form .row .form-control0 {
     display: block;
     border-radius: 30px;
-    width: 50%;
+    width: 100%;
     height: 60px;
     padding: 10px 15px;
     font-size: 16px;
@@ -1017,14 +1067,14 @@ body.light .row-form .contact-info img {
     background-image: none;
     border: 0;
     outline: none;
-    margin-right: 15px;
+
 
 }
 
 .form-whole .row-form .formularz form .row .form-control1 {
     display: block;
     border-radius: 30px;
-    width: 50%;
+    width: 100%;
     height: 60px;
     padding: 10px 15px;
     font-size: 16px;
@@ -1035,7 +1085,7 @@ body.light .row-form .contact-info img {
     background-image: none;
     border: 0;
     outline: none;
-    margin-left: 15px;
+
 
 }
 
@@ -1096,11 +1146,3 @@ body.light .row-form .contact-info img {
     background: var(--mainTextColor);
     color: var(--secondaryColor);
 }
-
-/* ******* youtube ******
-
-.youtube {
-    padding: 50px 0;
-}
-
-.youtu */
