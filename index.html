@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/css/modern-normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -40,10 +42,10 @@
         <ul class="menu">
             <li><a href="#"><i class="fa-solid fa-house"></i>Home </a></li>
             <li><a href="#about"><i class="fa-solid fa-user"></i>About </a></li>
-            <li><a href="#services"><i class="fa-solid fa-toolbox"></i>Services </a></li>
-            <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i>Education </a></li>
-            <li><a href="#works"><i class="fa-solid fa-briefcase"></i>Works </a></li>
-            <li><a href="#blog"><i class="fa-solid fa-blog"></i>Blog </a></li>
+            <li><a href="#services"><i class="fa-solid fa-toolbox"></i>Skills </a></li>
+            <li><a href="#education-work"><i class="fa-solid fa-graduation-cap"></i>Education and Work</a></li>
+            <!-- <li><a href="#works"><i class="fa-solid fa-briefcase"></i>Works </a></li> -->
+            <li><a href="#github"><i class="fa-brands fa-github"></i>GitHub </a></li>
             <li><a href="#contact"><i class="fa-solid fa-id-card"></i>Contact </a></li>
         </ul>
         <button class="hamburger">
@@ -55,6 +57,7 @@
         <p class="copy">© 2020 Bolby Template. </p>
     </nav>
     <!-- End Navigation -->
+
     <!-- Main -->
     <main>
         <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
@@ -159,7 +162,7 @@
                             <div class="description">
                                 <p>My name is Klaudia and I am Junior Front-end developer candidate from Gdańsk. I'm
                                     looking foraward to start new career path in IT. Currently I take part in a Full
-                                    Stack Developer bootcamp but I feel especially interestend in Front-end
+                                    Stack Developer bootcamp but I am especially interestend in Front-end
                                     technologies. I am still very new to the industry but I am eager to learn and
                                     prepared for lots of hard work. </p><a href="#" class="btn">Download CV</a>
                             </div>
@@ -177,8 +180,13 @@
                                     </div>
                                 </div>
                                 <div class="progress">
-                                    <div class="info"><span>JS</span><span>10%</span></div>
-                                    <div class="bar"><span style="width: 10%; background: rgb(10, 186, 209);"></span>
+                                    <div class="info"><span>JS</span><span>30%</span></div>
+                                    <div class="bar"><span style="width: 30%; background: var(--progressBarThree);"></span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="info"><span>React</span><span>currently studying</span></div>
+                                    <div class="bar"><span class="react" style="background: var(--progressBarThreePrim);"></span>
                                     </div>
                                 </div>
                                 <div class="progress">
@@ -212,7 +220,7 @@
                             <p class="about-text-subject">Projects completed</p>
                         </div>
                     </div>
-                    <div class="about-me-caption">
+                    <div class="about-me-caption "> 
                         <div class="about-icon"><i class="fa-solid fa-mug-hot"></i></div>
                         <div class="about-text">
                             <p class="about-text-nr">5670</p>
@@ -235,59 +243,139 @@
                     </div>
                 </div>
 
-                <!-- Services -->
+                <!-- Education and work -->
+                <section id="education-work" class="edu-work">
+                    <h2 class="global">Education and Work
+                        <img src="assets/img/dots-bg-light.svg" class="filter" alt="dots">
+                    </h2>
+                    <div class="wrapper-exp">
+                        <div class="col1">
+
+                            <div class="edu-container" data-aos="fade-up">
+
+                                <div class="edu ed1">
+
+                                    <span class="time">2011 - 2016</span>
+                                    <h3 class="exp-title">Medical University of Gdańsk</h3>
+                                    <p class="exp-description">Master's degree, Dietetics and clinical nutrition</p>
+                                </div>
+
+                                <div class="edu ed2">
+                                    <span class="time">2017 - 2018</span>
+                                    <h3 class="exp-title">Gdańsk University of Physical Education and Sport
+                                    </h3>
+                                    <p class="exp-description">postgraduate, Nutrition and Supplementation in Sport</p>
+                                </div>
+                                <div class="edu ed3">
+                                    <span class="time">2021 - currently </span>
+                                    <h3 class="exp-title">Code Brainers Fullstack Developer Bootcamp</h3>
+                                    <p class="exp-description">HTML, CSS, Sass, Python, Unix basics, JavaScript, SQL, React, GIT</p>
+                                </div>
+                                <span class="line"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="col1">
+
+                            <div class="job-container" data-aos="fade-up">
+
+                                <div class="job jb1">
+                                    <span class="time">2015 - 2016</span>
+                                    <h3 class="exp-title">Trainer/Educator</h3>
+                                    <p class="exp-description">Nutritional education of elderly patients suffering from diabetes and other metaboli disprders.</p>
+                                </div>
+                                <div class="job jb2">
+                                    <span class="time">2017 - 2018</span>
+                                    <h3 class="exp-title"> Head Dietitian </h3>
+                                    <p class="exp-description"> Running the clinic, patient care, scheduling appointments</p>
+                                </div>
+                                <div class="job jb3">
+
+                                    <span class="time"> 2016 - 2021</span>
+                                    <h3 class="exp-title">Head Dietitian/Knowledge manager</h3>
+                                    <p class="exp-description">Everyday work with very demanding patients from Poland
+                                        and
+                                        other
+                                        countries (Sweden, Norway, UK, Italy),
+                                        Patients and medical staff education,
+                                        Customer care in english and polish,
+                                        Representing enterprise on local and foreign conferences and partner
+                                        meetings,
+                                        Supporting OmniBiotic Poland as knowledge manager,
+                                        Supporting Mitocare Poland as knowledge manager,
+                                        Speaker on conferences,
+                                        Organizing conferences,
+                                        Translation of medical materials</p>
+                                </div>
+                                <span class="line"></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Services/Skills -->
                 <section id="services" class="services">
-                    <h2 class="global">Services
+                    <h2 class="global">Skills
                         <img src="assets/img/dots-bg-light.svg" class="filter" alt="dots">
                     </h2>
                     <div class="row">
                         <div class="service-box"
                             style="background-color: var(--serviceBoxOne); box-shadow: 0px 5px 20px 0px var(--serviceShadowOne);">
                             <img src="assets/img/service-1.svg" alt="paint">
-                            <h3>UI/UX design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula
-                                eget. </p>
+                            <h3>Intrested In Design</h3>
+                            <p>I always had highly developed sense of aesthetics. I see myself as a scientific mind but I also have the ability to think
+                                creatively.</p>
                         </div>
                         <div class="service-box"
                             style="background-color: var(--serviceBoxTwo); box-shadow: 0px 5px 20px 0px var(--serviceShadowTwo);">
                             <img src="assets/img/service-2.svg" alt="web">
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula
-                                eget. </p>
+                            <h3>Front-end Skills</h3>
+                            <p>Creating and deploying interactive and mobile-friendly applications using HTML, CSS,
+                                Sass, JavaScript. </p>
                         </div>
                         <div class="service-box"
                             style="background-color: var(--serviceBoxThree); box-shadow: 0px 5px 20px 0px var(--serviceShadowThree);">
-                            <img src="assets/img/service-3.svg" alt="camera">
-                            <h3>Photography</h3>
-                            <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula
-                                eget. </p>
+                            <img class="last" src="assets/img/service-4.svg" alt="camera">
+                            <h3>Other</h3>
+                            <p>I speak fluent Polish and English. I know the basics of the German language. </p>
                         </div>
                     </div>
                 </section>
-                <section id="blog" class="latest-posts">
-                    <h2 class="global">Latest posts
+
+                <!-- GitHub -->
+                <section id="github" class="latest-posts">
+                    <h2 class="global">Latest on GitHub
                         <img src="assets/img/dots-bg-light.svg" class="filter" alt="dots">
                     </h2>
                     <div class="row-latest">
                         <div class="blog">
                             <div class="picture"><img src="assets/img/laptop.svg" alt="laptop"><span
-                                    class="category">Reviews</span></div>
-                            <div class="detail"><a href="#">5 Best App Development Tool for Your Project </a>
-                                <div class="data">27.10.2021 * Klaudia</div>
+                                    class="category">Game</span></div>
+                            <div class="detail"><a href="https://github.com/KlaudiaBrzywcy/SnakeGame">
+                                    Snake game in JavaScript </a>
+                                <div class="data">20.04.2022 * Klaudia</div>
                             </div>
                         </div>
                         <div class="blog">
-                            <div class="picture"><img src="assets/img/piniondz.svg" alt="piniondz"><span
-                                    class="category">Tutorial</span></div>
-                            <div class="detail"><a href="#">Common Misconceptions About Payment </a>
-                                <div class="data">27.10.2021 * Klaudia</div>
+                            <div class="picture"><img src="assets/img/money.svg" alt="piniondz"><span
+                                    class="category">App</span></div>
+                            <div class="detail"><a href="https://github.com/KlaudiaBrzywcy/CV">Repository 
+                                with CV code
+                            </a>
+                                <div class="data">17.04.2022 * Klaudia</div>
                             </div>
                         </div>
                         <div class="blog">
                             <div class="picture"><img src="assets/img/rocket.svg" alt="rakieta"><span
-                                    class="category">Business</span></div>
-                            <div class="detail"><a href="#">3 Things To Know About Startup Business </a>
-                                <div class="data">27.10.2021 * Klaudia</div>
+                                    class="category">App</span></div>
+                            <div class="detail"><a href="https://github.com/KlaudiaBrzywcy/Dream-Team-App">Dream team app
+                                in JavaScript
+                            </a>
+                                <div class="data">15.03.2022 * Klaudia</div>
                             </div>
                         </div>
                     </div>
@@ -360,22 +448,7 @@
             </div>
         </section>
 
-        <!-- <section class="youtube">
-            <div class="container">
-                <h2>My movies</h2>
-                <div class="movies">
-                    <div class="movie">
-                        <div class="movie-wrapper">
-                            <iframe src="" frameborder="0"></iframe>
-                        </div>
-                        <div class="movie-wrapper">
-                            <iframe src="" frameborder="0"></iframe>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </main>
     <!-- End Main -->
     <script src="assets/js/typed.min.js"></script>

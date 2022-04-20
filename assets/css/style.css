@@ -10,7 +10,7 @@ VARIABLES
 body.dark {
     --mainBgColor: #3f3b75;
     --mainTextColor: #fff;
-    --primaryColor: #eeca2b;
+    --primaryColor: #eeca2b; 
     --copyNavigationColor: #9c9ab3;
     --secondaryColor: #FF4C60;
     --aboutBoxBGColor: #302f4e;
@@ -18,6 +18,8 @@ body.dark {
     --mainNAVBgColor: #2d2a58;
     --progressBarOne: rgb(189, 209, 10);
     --progressBarTwo: rgb(209, 10, 193);
+    --progressBarThree:  rgb(10, 186, 209);
+    --progressBarThreePrim:  rgb(59, 138, 150);
     --progressBarFour: rgb(128, 6, 98);
     --progressBarFive: rgb(104, 247, 209);
     --progressBarSix: rgb(226, 250, 10);
@@ -38,12 +40,14 @@ body.light {
     --copyNavigationColor: rgb(6, 84, 140);
     --secondaryColor: rgb(11, 162, 186);
     --aboutBoxBGColor: rgb(184, 216, 245);
-    --progressBarBGColor: #f1f1f1;
+    --progressBarBGColor: rgb(242, 242, 242);
     --mainNAVBgColor: rgb(184, 205, 240);
     --progressBarOne: rgb(7, 79, 123);
     --progressBarTwo: rgb(45, 228, 231);
+    --progressBarThree:  rgb(10, 186, 209);
+    --progressBarThreePrim:  rgb(59, 138, 150);
     --progressBarFour: rgb(47, 44, 44);
-    --progressBarFive: rgb(236, 159, 220);
+    --progressBarFive: rgb(236, 159, 220); 
     --progressBarSix: rgb(81, 238, 175);
     --serviceBoxOne: rgb(50, 159, 189);
     --serviceShadowOne: rgba(6, 91, 115, 0.408);
@@ -143,9 +147,14 @@ ul {
     display: flex;
     background: var(--aboutBoxBGColor);
     z-index: 30000;
-
-
 }
+
+@media(max-width: 500px) {
+    .switcher{
+        bottom: 70px;
+        right: 20px;
+    }
+} 
 
 body.dark .switcher .fa-moon {
     display: none;
@@ -170,7 +179,7 @@ headers
 
 h2.global {
     font-size: clamp(1.625rem, 1.3897rem + 1.1765vw, 2.25rem);
-    margin: 0 0 50px 0;
+    margin: 0 0 60px 0;
     position: relative;
     /* line-height: 1.2; */
 
@@ -701,6 +710,9 @@ NAWIGACJA
 }
 
 @media (max-width:700px) {
+    .about .about-top .about-text .about-text-bg{
+        margin: 15px;
+    }
     .about .about-top .about-text .about-text-bg .description {
         width: 100%;
         order: 2;
@@ -748,6 +760,8 @@ NAWIGACJA
     background: var(--progressBarBGColor);
     border-radius: 15px;
     height: 7px;
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -757,13 +771,45 @@ NAWIGACJA
     border-radius: 15px;
 }
 
+.progress .bar .react {
+    width: 30%;
+    height: 7px;
+    background: var(--mainTextColor);
+    
+    position: absolute;
+    transform: translateX(-10%);
+    animation: fill-bar 4s linear infinite;
+}
+
+@keyframes fill-bar {
+    10% {
+        width: 10%;
+    }
+
+    25% {
+        width: 25%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width: 75%;
+    }
+
+} 
+
+
 /********************************** 
 About me bottom*************************
 *************************** */
 .about-me {
     display: flex;
-    margin: 0 -15px 70px 0;
+    margin: 20px 0px 70px 0; 
     flex-wrap: wrap;
+    margin-bottom: 150px;
+    justify-content: space-around;
 
 }
 
@@ -771,6 +817,7 @@ About me bottom*************************
     width: 25%;
     padding: 0 15px;
     display: flex;
+    justify-content: center;
 }
 
 /* *****media queries********* */
@@ -782,16 +829,23 @@ About me bottom*************************
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     .about-me .about-me-caption {
         width: 100%;
-        justify-content: center;
+        justify-content: center; 
+        
     }
+
+  
 }
 
 .about-me .about-me-caption .about-icon {
     font-size: clamp(1.25rem, 1.0147rem + 1.1765vw, 1.875rem);
     margin: 0 15px 0 0;
+}
+
+.about-me .about-me-caption .about-text {
+    width: 40%; 
 }
 
 .about-me .about-me-caption .about-text .about-text-nr {
@@ -802,6 +856,8 @@ About me bottom*************************
 
 .about-me .about-me-caption .about-text .about-text-subject {
     margin: 0;
+    
+
 }
 
 
@@ -815,8 +871,6 @@ About me bottom*************************
 
 }
 
-
-
 .row .service-box {
     width: calc(100%/3);
     padding: 30px;
@@ -828,6 +882,7 @@ About me bottom*************************
     transition: 300ms;
 
 }
+ 
 
 /* *****media queries********* */
 
@@ -845,6 +900,31 @@ About me bottom*************************
 
 }
 
+@media (max-width:550px) {
+    
+    .row .service-box {
+        width: 100%;
+        margin: 15px 30px;
+
+    }
+
+}
+@media (max-width:380px) {
+    
+    .row .service-box {
+        width: 100%;
+        margin: 15px 10px;
+
+    }
+
+    .row .service-box p {
+        font-size: 13px;
+    }
+    .row .service-box h3 {
+        font-size: 15px;
+    }
+}
+
 .row .service-box:hover {
     transform: translateY(-5%);
 }
@@ -855,11 +935,136 @@ About me bottom*************************
     margin-bottom: 22px;
 }
 
+.row .service-box .last {
+    max-width: 28%;
+}
+
 .row .service-box p {
     text-align: center;
 }
 
-/* **********Latest posts************ */
+/* ******************Education and work*************** */
+
+
+
+.wrapper-exp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 60px;
+
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+.col1 {
+    width: 100%;
+    margin: 10px;
+    background-color: var(--aboutBoxBGColor);
+    padding: 20px;
+    position: relative;
+    border-radius: 25px;
+} 
+
+.edu-container,
+.job-container {
+    padding: 30px 30px 30px 0px;
+    background-color: var(--aboutBoxBGColor);
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.edu,
+.job {
+    position: absolute;
+    padding: 0 0 0 70px;
+
+}
+
+.jb3 {
+    text-align: justify;
+}
+
+.ed1,
+.ed2,
+.ed3,
+.jb1,
+.jb2,
+.jb3 {
+    bottom: -330px;
+    visibility: hidden;
+    transition-timing-function: ease-in;
+    transition: 1200ms;
+}
+
+.line {
+    position: absolute;
+    width: 1px;
+    background-color: var(--secondaryColor);
+    top: 30px;
+    bottom: 30px;
+    left: 34px;
+}
+
+.edu,
+.job {
+    position: relative;
+}
+
+.edu ::after {
+    content: '\e019';
+    font-family: "simple-line-icons";
+    font-size: 24px;
+    color: var(--secondaryColor);
+    position: absolute;
+    left: 22px;
+    top: 0;
+    z-index: 1;
+}
+
+.job ::after {
+    content: "\e04b";
+    font-family: "simple-line-icons";
+    font-size: 24px;
+    color: var(--secondaryColor);
+    position: absolute;
+    left: 22px;
+    top: 0;
+    z-index: 1;
+}
+
+/* *****media queries********* */
+
+@media (max-width:800px) {
+    .wrapper-exp {
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+    
+    }
+
+}
+
+@media (max-width:400px) {
+    .wrapper-exp {
+    
+        margin-right: 5px;
+        margin-left: 5px;
+    
+    }
+    .col1 {
+        padding: 10px;
+    }
+    .edu, .job {
+        font-size: 12px;
+    }
+
+}
+
+/* **********GitHub************ */
 
 .row-latest {
     display: flex;
@@ -891,6 +1096,12 @@ About me bottom*************************
 
 }
 
+@media (max-width:550px) {
+    .row-latest .blog{
+        margin: 15px 10px;
+    }
+}
+ 
 .row-latest .blog:hover {
     transform: translateY(-5%);
 }
@@ -915,7 +1126,6 @@ About me bottom*************************
     transition: 500ms;
 
 }
-
 
 .row-latest .blog .picture .category {
     background: var(--secondaryColor);
@@ -1028,8 +1238,13 @@ body.light .row-form .contact-info img {
         width: 100%;
         margin-left: 0px;
     }
+}
 
-
+@media (max-width: 550px) {
+    .form-whole h2 {
+    margin-bottom: 20px;
+    }
+  
 }
 
 .row-form .contact-info h3 {

@@ -68,3 +68,28 @@ AOS.init();
 let parallax = new Parallax(document.querySelector('.parallax'), {
     relativeInput: true
 })
+
+const eduDiv1 = document.querySelector('.ed1');
+const eduDiv2 = document.querySelector('.ed2');
+const eduDiv3 = document.querySelector('.ed3');
+const jobDiv1 = document.querySelector('.jb1');
+const jobDiv2 = document.querySelector('.jb2');
+const jobDiv3 = document.querySelector('.jb3');
+
+const listOfDivs = [eduDiv1, eduDiv2, eduDiv3, jobDiv1, jobDiv2, jobDiv3]
+
+const showDivs = () => {
+
+    listOfDivs.forEach(div => {
+        div.style.visibility = 'visible';
+        div.style.bottom = '0px';
+
+
+    }
+    )
+}
+
+window.addEventListener('scroll', showDivs)
+
+let reactSpan = document.querySelector('.react')
+
