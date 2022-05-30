@@ -93,3 +93,18 @@ window.addEventListener('scroll', showDivs)
 
 let reactSpan = document.querySelector('.react')
 
+const hireBtn = document.querySelector('.hire-btn');
+const hireDiv = document.querySelector('.hire-open');
+const closeHireBtn = document.querySelector('.close-hire-btn');
+
+const handleHireClick = () => {
+    
+    hireDiv.style.display = 'flex'
+}
+
+const closeHire = () => {
+    hireDiv.style.display = 'none'
+} 
+
+hireBtn.addEventListener('click', handleHireClick);
+closeHireBtn.addEventListener('click', closeHire)

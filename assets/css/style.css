@@ -613,6 +613,49 @@ NAWIGACJA
     }
 }
 
+.hire-open {
+    background-color: var(--aboutBoxBGColor); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 120px;
+    border-radius: 25px;
+    margin-top: 30px;
+    display: none;
+} 
+
+.hire-open img {
+    width: 50%;
+}
+
+.hire-open h3 {
+    font-size: 30px;
+    text-align: justify;
+} 
+ 
+.close-hire-btn {
+    border: none;
+    color: var(--mainTextColor);
+    margin: 20px 0 20px 0;
+}
+
+@media (max-width:910px) {
+  .hire-open {
+    padding: 20px 50px;
+  }  
+}
+
+@media (max-width:770px) {
+    .hire-open {
+      padding: 20px 15px;
+      margin: 30px 15px 0 15px;
+    } 
+    
+    .hire-open h3 {
+        font-size: 20px;
+    } 
+  }
 /**********************************
 ********************** about me sekcja **********
 ************** */
